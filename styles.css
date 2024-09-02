@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* global */
+  body {
+    font-family: "Public Sans", sans-serif;
+    list-style-position: inside;
+  }
+  a {
+    color: blue;
+  }
+  ul, li::marker {
+    content: "✦";
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+  li {
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  h1,h2 {
+    margin: 0%;
+  }
+
+/* navigation bar */
+  .topnav {
+    overflow: hidden;
+  }
+  .topnav a {
+    font-size: x-large;
+    font-weight: 700;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .topnav a.split {
+    float: right;
+  }
+  .topnav a.current {
+    text-decoration: underline;
+    text-decoration-thickness: 15%;
+  }
+
+/* content */
+  div.content {
+    width: 60%;
+    max-width: 1080px;
+    margin: auto;
+  }
