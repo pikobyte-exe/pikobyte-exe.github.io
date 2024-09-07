@@ -1,0 +1,4 @@
+- [ ] dark mode
+- [ ] beige mode
+- [ ] more visuals
+- [ ] more colors

@@ -5,8 +5,13 @@
     font-family: "Public Sans", sans-serif;
     list-style-position: inside;
   }
+  p {
+    margin: 0%;
+  }
   a {
     color: blue;
+    text-decoration: none;
+    font-weight: 700;
   }
   ul, li::marker {
     content: "✦";
@@ -20,6 +25,31 @@
   }
   h1,h2 {
     margin: 0%;
+    margin-bottom: 0.2em;
+  }
+  details {
+    display: inline-block;
+    cursor: pointer;
+  }
+  details summary > * {
+    display: inline;
+    padding: 10px 10px 10px 5px;
+    border-radius: 5px;
+  }
+  summary::marker {
+    font-size: 1.5em;
+    font-weight: 700;
+    content: "+";
+  }
+  details[open] summary::marker {
+    content: "−";
+    font-weight: 700;
+  }
+  details ul {
+    margin-left: 10px;
+  }
+  details li::marker {
+    content: "⬥";
   }
 
 /* navigation bar */
@@ -48,4 +78,15 @@
     width: 60%;
     max-width: 1080px;
     margin: auto;
+  }
+
+/* mobile */
+  @media screen and (max-width: 500px) {
+    .topnav a {
+      font-size: larger;
+      display: inline-block;
+    }
+    body {
+      margin: 0%;
+    }
   }
